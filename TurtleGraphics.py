@@ -47,20 +47,20 @@ def fillCorner(myTurtle, corner):
 def squaresInSquares(myTurtle, number):
     myTurtle.penup()
     myTurtle.right(180)
-    myTurtle.forward(190)
+    myTurtle.forward(180)
     myTurtle.right(90)
-    myTurtle.forward(190)
+    myTurtle.forward(180)
     myTurtle.right(90)
     myTurtle.pendown()
     x = 400
     for i in range(number):
-        x = x * 0.95
+        x = x * 0.9
         drawSquare(myTurtle, x)
         myTurtle.penup()
         myTurtle.right (90)
-        myTurtle.forward ((x - (x * 0.95)) / 2)
+        myTurtle.forward ((x - (x * 0.9)) / 2)
         myTurtle.left (90)
-        myTurtle.forward ((x - (x * 0.95)) / 2)
+        myTurtle.forward ((x - (x * 0.9)) / 2)
         myTurtle.pendown()
 
 
